@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/aabet/projects/libasm/libasm/libasm.h
+unistd.h
+/Users/aabet/projects/libasm/libasm/unistd.h
+
+/Users/aabet/projects/libasm/libasm/main.c
+stdio.h
+-
+stdlib.h
+-
+libasm.h
+/Users/aabet/projects/libasm/libasm/libasm.h
+
