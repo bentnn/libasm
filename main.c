@@ -34,25 +34,25 @@ int main() {
 
 	printf("\033[1;36m""\tft_write:\n""\033[0m");
 	printf("  With the stdout:\n");
-	printf("|%zd|\n",write(0, "Hi, there!\n", 11));
+	printf("|%zd|\n", ft_write(0, "Hi, there!\n", 11));
 	printf("  With the file descriptor:\n");
 	int fd;
 	fd = open("t.txt", O_WRONLY);
-	printf("|%zd|\n",write(fd, "Hi, there!\n", 11));
+	printf("|%zd|\n", ft_write(fd, "Hi, there!\n", 11));
 	close(fd);
-	printf("  With the wrong file descriptor:\n");
-	printf("|%zd|, errno: %d\n", write(22, "Hi, there!\n", 11), errno);
+	printf("  With the wrong file descriptor:git \n");
+	printf("|%zd|, errno: %d\n", ft_write(22, "Hi, there!\n", 11), errno);
 
 	printf("\033[1;36m""\tft_read:\n""\033[0m");
 	char buf[25];
 	printf("  With the stdin:\n");
-	printf("|%zd|, buf: '%s'\n",read(0, buf, 11), buf);
+	printf("|%zd|, buf: '%s'\n", ft_read(0, buf, 11), buf);
 	printf("  With the file descriptor:\n");
 	fd = open("t.txt", O_RDONLY);
-	printf("|%zd|, buf: '%s'\n", read(fd, buf, 10), buf);
+	printf("|%zd|, buf: '%s'\n", ft_read(fd, buf, 10), buf);
 	close(fd);
 	printf("  With the wrong file descriptor:\n");
-	printf("|%zd|, buf: '%s', errno: %d\n", read(22, buf, 10), buf, errno);
+	printf("|%zd|, buf: '%s', errno: %d\n", ft_read(22, buf, 10), buf, errno);
 
 	printf("\033[1;36m""\tft_strdup:\n""\033[0m");
 	printf("  Empty string:\n");
