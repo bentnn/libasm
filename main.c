@@ -10,8 +10,9 @@ int main() {
 //	dst = malloc(sizeof(char) * 5);
 //	char *str = ft_strcpy(dst, s);
 //	printf("%s\n%s", dst, str);
-
-	printf("%d", ft_strcmp("0", "6"));
+	char *dst = ft_strdup(0);
+	printf("%s", dst );
+	free(dst);
 
 	return 0;
 }
