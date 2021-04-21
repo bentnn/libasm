@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/aabet/projects/libasm/libasm/libasm.h">
+			<Option target="libasm"/>
+		</Unit>
 		<Unit filename="/Users/aabet/projects/libasm/libasm/main.c">
 			<Option target="libasm"/>
 		</Unit>

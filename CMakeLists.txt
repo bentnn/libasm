@@ -3,4 +3,4 @@ project(libasm C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(libasm main.c)
+add_executable(libasm main.c libasm.h)
